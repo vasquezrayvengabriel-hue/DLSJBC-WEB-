@@ -1,147 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admission | DLSJBC</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .admission-hero { text-align: center; background-color: rgba(10, 61, 48, 0.9); padding: 40px 20px; border-bottom: 3px solid var(--accent-gold); border-top: 4px solid var(--accent-gold); margin-bottom: 30px; }
-        .admission-hero img { width: 100%; max-width: 700px; height: auto; border-radius: 6px; border: 2px solid var(--accent-gold); margin-bottom: 25px; }
-        .admission-hero h2 { font-family: 'Georgia', serif; font-size: 2.5rem; color: #fff; margin-bottom: 15px; text-transform: uppercase; }
-        .admission-hero p { max-width: 800px; margin: 0 auto; font-size: 0.95rem; line-height: 1.6; color: var(--text-gold-light); }
-        
-        .requirement-shelf { background-color: #ffffff; color: #333333; padding: 22px; margin-bottom: 20px; border-radius: 4px; border-left: 6px solid var(--brand-deep-green); }
-        .requirement-shelf h3 { color: var(--brand-deep-green); font-size: 1.15rem; margin-bottom: 8px; font-weight: bold; }
-        .requirement-shelf ul { list-style-type: none; }
-        .requirement-shelf ul li { margin-bottom: 4px; font-size: 0.92rem; }
-        
-        .procedure-shelf { background-color: rgba(17, 17, 17, 0.9); border: 1px solid var(--border-gold-alpha); border-top: 4px solid var(--accent-gold); padding: 30px; margin-top: 40px; }
-        .procedure-shelf h2 { font-family: 'Georgia', serif; color: var(--accent-gold); text-align: center; font-size: 2rem; margin-bottom: 25px; }
-        .proc-block { margin-bottom: 25px; }
-        .proc-block h4 { color: var(--accent-gold); font-size: 1.05rem; margin-bottom: 8px; border-bottom: 1px solid var(--border-gold-alpha); padding-bottom: 4px; }
-        .proc-block ol { padding-left: 20px; }
-        .proc-block ol li { margin-bottom: 6px; font-size: 0.9rem; color: #ffffff; }
-    </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admission | De La Salle John Bosco College</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="brand-identity">
-                <div class="brand-crest">DLS</div>
-                <div class="brand-typography"><h1>De La Salle John Bosco College</h1><p>Bislig City, Philippines</p></div>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="admission.html" class="nav-link active">Admission</a></li>
-                <li><a href="posts.html" class="nav-link">Posts</a></li>
-                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <header class="admission-hero">
-        <img src="images/admission.jpg" alt="Admissions Banner Information">
-        <h2>Admissions</h2>
-        <p>You can learn all about the admissions and enrollment requirements for our school. Our step-by-step process will guide you through the necessary steps for enrolling your student. Please review all of the information provided and contact us with any questions you may have.</p>
-    </header>
+<!--================ TOP PROFILE ================-->
 
-    <main class="container">
-        <!-- CRITERIA EXTRACTED DIRECTLY FROM REFERENCE IMAGES -->
-        <div class="requirement-shelf">
-            <h3>NURSERY – KINDERGARTEN</h3>
-            <ul><li>• PSA Birth Certificate (1 Photocopy)</li></ul>
-        </div>
-        <div class="requirement-shelf">
-            <h3>GRADE 1</h3>
-            <ul>
-                <li>• ECCD Checklist (Original Copy)</li>
-                <li>• PSA Birth Certificate (1 Photocopy)</li>
-            </ul>
-        </div>
-        <div class="requirement-shelf">
-            <h3>GRADE 2 – GRADE 10</h3>
-            <ul>
-                <li>• Report Card (Form – 138A)</li>
-                <li>• PSA Birth Certificate (1 Photocopy)</li>
-                <li>• Certificate of Good Moral Character</li>
-            </ul>
-        </div>
-        <div class="requirement-shelf">
-            <h3>GRADE 11 – GRADE 12</h3>
-            <ul>
-                <li>• Report Card (F – 138A)</li>
-                <li>• Certificate of Good Moral Character</li>
-                <li>• Certificate of Completion in Junior High</li>
-                <li>• ESC Certificate (If Private School Completer)</li>
-            </ul>
-        </div>
-        <div class="requirement-shelf">
-            <h3>FRESHMEN (COLLEGE)</h3>
-            <ul>
-                <li>• 4 pcs 1x1 ID Picture | • Drug Test Result | • Report Card (F – 138)</li>
-                <li>• Medical Certificate | • PSA Birth Certificate | • Certificate of Good Moral Character</li>
-                <li>• Marriage Contract (If Married)</li>
-            </ul>
-        </div>
-        <div class="requirement-shelf">
-            <h3>DIPLOMA PROGRAM</h3>
-            <ul>
-                <li>• Report Card (F – 138 High School, Senior High School) | • Transcript of Records (College)</li>
-                <li>• PSA Birth Certificate (1 Photocopy) | • Indigency Certificate (From Barangay)</li>
-                <li>• Proof of Residency (DSWD) | • PWD Card (Photocopy)</li>
-            </ul>
-        </div>
-        <div class="requirement-shelf">
-            <h3>TRANSFEREE (College)</h3>
-            <ul>
-                <li>• TOR (Evaluation Copy) | • Honorable Dismissal | • Certificate of Good Moral Character</li>
-                <li>• PSA Birth Certificate | • Medical Certificate | • Drug Test Result | • 4 pcs 1x1 ID Picture</li>
-            </ul>
-        </div>
+<header class="top-profile">
 
-        <!-- SEQUENTIAL STEPS -->
-        <section class="procedure-shelf">
-            <h2>Enrollment Procedures</h2>
-            <div class="proc-block">
-                <h4>(NEW) KINDERGARTEN</h4>
-                <ol>
-                    <li>See the Guidance – in – charge for the Entrance Examination / Interview.</li>
-                    <li>Secure the Eligibility Form from the Principal's Office.</li>
-                    <li>Present PSA Birth Certificate and Eligibility Form to the Registrar's Office. Secure and accomplish Registration Form.</li>
-                    <li>Proceed to Finance Office for Tuition Leveling.</li>
-                    <li>Pay the Enrollment Fee at the cashier.</li>
-                    <li>Go back to the Registrar's Office.</li>
-                </ol>
-            </div>
-            <div class="proc-block">
-                <h4>(NEW) GRADE 1 to GRADE 12</h4>
-                <ol>
-                    <li>Present the admission requirements at the Registrar's Office.</li>
-                    <li>Secure and accomplish the Registration Form.</li>
-                    <li>Proceed to the Finance Office for Tuition Leveling.</li>
-                    <li>Pay the Enrollment Fee at the cashier.</li>
-                    <li>Go back to the Registrar's Office.</li>
-                </ol>
-            </div>
-            <div class="proc-block">
-                <h4>CONTINUING STUDENTS/ PUPILS</h4>
-                <ol>
-                    <li>Present original report card to the Registrar's Office.</li>
-                    <li>Secure and accomplish the Registration Form.</li>
-                    <li>Proceed to the Finance Office for Tuition Leveling.</li>
-                    <li>Pay the Enrollment Fee at the cashier.</li>
-                    <li>Go back to the Registrar's Office.</li>
-                </ol>
-            </div>
-        </section>
-    </main>
+<img src="images/profile.jpg" alt="DLSJBC">
 
-    <footer class="site-footer">
-        <p>© De La Salle John Bosco College. All Institutional Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+<h1>De La Salle John Bosco College</h1>
+
+<p>Bislig City, Surigao del Sur, Philippines</p>
+
+</header>
+
+<!--================ NAVIGATION ================-->
+
+<nav class="navbar">
+
+<div class="nav-container">
+
+<div class="logo">
+
+<img src="images/logo.png" alt="Logo">
+
+<span>DLSJBC</span>
+
+</div>
+
+<ul class="nav-menu">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="admission.html" class="active">Admission</a></li>
+
+<li><a href="posts.html">Posts</a></li>
+
+<li><a href="contact.html">Contact Us</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+<!--================ QUICK MENU ================-->
+
+<div class="quick-menu">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="admission.html">Admission</a>
+
+<a href="posts.html">Posts</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+<!--================ HERO ================-->
+
+<section class="container hero">
+
+<div>
+
+<h2>Admissions</h2>
+
+<p>
+
+Welcome to the Admissions Office of De La Salle John Bosco College.
+We are committed to making the enrollment process simple and convenient
+for all new and continuing students.
+
+Please review the admission requirements and enrollment procedures below.
+
+</p>
+
+<a href="#requirements" class="btn btn-primary">
+
+View Requirements
+
+</a>
+
+</div>
+
+<div>
+
+<img src="images/admission.jpg" alt="Admissions">
+
+</div>
+
+</section>
+
+<!--================ REQUIREMENTS ================-->
+
+<section class="container" id="requirements">
+
+<h2 class="section-title">
+
+Admission Requirements
+
+</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Kindergarten</h3>
+
+<ul>
+
+<li>• PSA Birth Certificate</li>
+
+<li>• Passport-size Photo</li>
+
+<li>• Parent/Guardian ID</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Elementary</h3>
+
+<ul>
+
+<li>• Report Card</li>
+
+<li>• PSA Birth Certificate</li>
+
+<li>• Good Moral Certificate</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Junior & Senior High</h3>
+
+<ul>
+
+<li>• Form 138</li>
+
+<li>• Good Moral Certificate</li>
+
+<li>• PSA Birth Certificate</li>
+
+<li>• Certificate of Completion</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>College Freshmen</h3>
+
+<ul>
+
+<li>• Report Card</li>
+
+<li>• PSA Birth Certificate</li>
+
+<li>• Good Moral Certificate</li>
+
+<li>• Medical Certificate</li>
+
+<li>• Drug Test Result</li>
+
+<li>• 4 pcs 1x1 ID Picture</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>College Transferee</h3>
+
+<ul>
+
+<li>• Transcript of Records</li>
+
+<li>• Honorable Dismissal</li>
+
+<li>• Good Moral Certificate</li>
+
+<li>• Medical Certificate</li>
+
+<li>• Drug Test Result</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>TESDA / Diploma</h3>
+
+<ul>
+
+<li>• High School Report Card</li>
+
+<li>• PSA Birth Certificate</li>
+
+<li>• Barangay Certificate</li>
+
+<li>• Residency Proof</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================ PROCEDURES ================-->
+
+<section class="container">
+
+<h2 class="section-title">
+
+Enrollment Procedure
+
+</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Step 1</h3>
+
+<p>
+
+Submit all admission requirements
+to the Registrar's Office.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Step 2</h3>
+
+<p>
+
+Complete the Registration Form
+provided by the Registrar.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Step 3</h3>
+
+<p>
+
+Proceed to the Finance Office
+for tuition assessment.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Step 4</h3>
+
+<p>
+
+Pay the required enrollment fees.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Step 5</h3>
+
+<p>
+
+Return to the Registrar's Office
+to complete your enrollment.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================ CTA ================-->
+
+<section class="container">
+
+<div class="card">
+
+<div class="card-content" style="text-align:center;">
+
+<h3>Ready to Join DLSJBC?</h3>
+
+<p>
+
+Become part of a community that promotes
+academic excellence, Christian values,
+and service to society.
+
+</p>
+
+<br>
+
+<a href="contact.html" class="btn btn-primary">
+
+Contact Admissions
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================ FOOTER ================-->
+
+<footer>
+
+<img src="images/footer.jpg"
+class="footer-image"
+alt="Footer">
+
+<div class="footer-content">
+
+<h3>De La Salle John Bosco College</h3>
+
+<p>
+
+De La Salle Drive,
+Mangagoy,
+Bislig City,
+Surigao del Sur,
+Philippines
+
+</p>
+
+<p>Email: info@dlsjbc.edu.ph</p>
+
+<p>Telephone: (+63) 86 826-2214</p>
+
+</div>
+
+<div class="footer-bottom">
+
+© 2026 De La Salle John Bosco College.
+All Rights Reserved.
+
+</div>
+
+</footer>
+
 </body>
-    </html>
-    
+
+</html>
