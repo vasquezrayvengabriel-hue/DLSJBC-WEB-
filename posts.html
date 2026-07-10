@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Posts | DLSJBC</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .blog-subnav { max-width: 1000px; margin: 20px auto 10px auto; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .subnav-links { display: flex; gap: 20px; }
+        .subnav-links a { color: #ffffff; text-decoration: none; font-size: 0.95rem; }
+        .subnav-links a.active { font-weight: bold; color: var(--accent-gold); }
+        
+        .blog-grid-container { max-width: 1000px; margin: 0 auto 60px auto; padding: 0 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .wix-blog-card { background-color: rgba(17, 17, 17, 0.95); border: 1px solid var(--border-gold-alpha); display: flex; flex-direction: column; }
+        .card-banner-img { width: 100%; height: 220px; display: block; object-fit: cover; border-bottom: 2px solid var(--accent-gold); }
+        .card-inner-box { padding: 25px; display: flex; flex-direction: column; flex-grow: 1; }
+        
+        .author-meta-row { display: flex; align-items: center; gap: 12px; margin-bottom: 15px; font-size: 0.8rem; color: var(--text-muted-gray); }
+        .author-avatar-link { display: inline-block; line-height: 0; transition: transform 0.2s ease; }
+        .author-avatar-link:hover { transform: scale(1.05); }
+        .author-avatar { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; border: 1px solid var(--accent-gold); }
+        .meta-details { display: flex; flex-direction: column; line-height: 1.3; }
+        .author-name-link { color: #ffffff; text-decoration: none; font-weight: bold; }
+        .author-name-link:hover { color: var(--accent-gold); text-decoration: underline; }
+        
+        .blog-card-title { font-family: 'Georgia', serif; font-size: 1.2rem; font-weight: bold; line-height: 1.4; margin-bottom: 12px; color: var(--accent-gold); text-decoration: none; }
+        .blog-card-preview { font-size: 0.88rem; color: #dddddd; margin-bottom: 25px; line-height: 1.6; }
+        .card-divider-line { height: 1px; background-color: var(--border-gold-alpha); margin-top: auto; margin-bottom: 15px; }
+        .card-stats-footer { display: flex; justify-content: space-between; align-items: center; font-size: 0.8rem; color: var(--text-muted-gray); }
+        .like-heart { color: #d9534f; }
+
+        @media (max-width: 768px) { .blog-grid-container { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="brand-identity">
+                <div class="brand-crest">DLS</div>
+                <div class="brand-typography"><h1>De La Salle John Bosco College</h1><p>Bislig City, Philippines</p></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="admission.html" class="nav-link">Admission</a></li>
+                <li><a href="posts.html" class="nav-link active">Posts</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="blog-subnav">
+        <div class="subnav-links"><a href="#" class="active">All Posts</a><a href="#">Admission</a></div>
+        <div class="search-icon" style="color: var(--accent-gold); cursor: pointer;">🔍</div>
+    </div>
+
+    <!-- 10 SEQUENTIAL POST BANNER LAYOUT CHANNELS -->
+    <div class="blog-grid-container">
+        <!-- CARD 1 -->
+        <article class="wix-blog-card">
+            <img class="card-banner-img" src="images/post1.jpg" alt="Post 1">
+            <div class="card-inner-box">
+                <div class="author-meta-row">
+                    <a href="index.html" class="author-avatar-link"><img class="author-avatar" src="images/profile.jpg" alt="User"></a>
+                    <div class="meta-details"><a href="index.html" class="author-name-link">mis8519</a><span>Jun 5, 2024 • 1 min read</span></div>
+                </div>
+                <a href="#" class="blog-card-title">ADMISSION FOR SY 2024-2025 IS NOW ONGOING</a>
+                <p class="blog-card-preview">Heads up, future Lasallian enthusiasts! DLSJBC is ready to open doors as admission for all levels is...</p>
+                <div class="card-divider-line"></div>
+                <div class="card-stats-footer"><span>3,197 views</span><div><span>2 </span><span class="like-heart">♥</span></div></div>
+            </div>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="wix-blog-card">
+            <img class="card-banner-img" src="images/post2.jpg" alt="Post 2">
+            <div class="card-inner-box">
+                <div class="author-meta-row">
+                    <a href="index.html" class="author-avatar-link"><img class="author-avatar" src="images/profile.jpg" alt="User"></a>
+                    <div class="meta-details"><a href="index.html" class="author-name-link">mis8519</a><span>May 6, 2024 • 1 min read</span></div>
+                </div>
+                <a href="#" class="blog-card-title">Alumni Homecoming 2024 Updates</a>
+                <p class="blog-card-preview">Mark your calendars for the most exciting event of the year! Get ready for a night filled with nostalgia...</p>
+                <div class="card-divider-line"></div>
+                <div class="card-stats-footer"><span>410 views</span><div><span>5 </span><span class="like-heart">♥</span></div></div>
+            </div>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="wix-blog-card">
+            <img class="card-banner-img" src="images/post3.jpg" alt="Post 3">
+            <div class="card-inner-box">
+                <div class="author-meta-row">
+                    <a href="index.html" class="author-avatar-link"><img class="author-avatar" src="images/profile.jpg" alt="User"></a>
+                    <div class="meta-details"><a href="index.html" class="author-name-link">mis8519</a><span>Apr 2, 2024 • 1 min read</span></div>
+                </div>
+                <a href="#" class="blog-card-title">Pre-Registration Protocols Opened</a>
+                <p class="blog-card-preview">Prepare to soar as Pre-enrollment opens at De La Salle John Bosco College! Choose your path today...</p>
+                <div class="card-divider-line"></div>
+                <div class="card-stats-footer"><span>532 views</span><div><span>3 </span><span class="like-heart">♥</span></div></div>
+            </div>
+        </article>
+
+        <!-- CARD 4 -->
+        <article class="wix-blog-card">
+            <img class="card-banner-img" src="images/post4.jpg" alt="Post 4">
+            <div class="card-inner-box">
+                <div class="author-meta-row">
+                    <a href="index.html" class="author-avatar-link"><img class="author-avatar" src="images/profile.jpg" alt="User"></a>
+                    <div class="meta-details"><a href="index.html" class="author-name-link">mis8519</a><span>Mar 13, 2024 • 1 min read</span></div>
+                </div>
+                <a href="#" class="blog-card-title">Science Department Benchmarking at CSU</a>
+                <p class="blog-card-preview">Committed to excellence in science education, our teachers evaluate structural training systems...</p>
+                <div class="card-divider-line"></div>
+                <div class="card-stats-footer"><span>324 views</span><div><span>1 </span><span class="like-heart">♥</span></div></div>
+            </div>
+        </article>
+
+        <!-- CARDS 5 TO 10 STRUCTURAL GENERATIONS -->
+        <article class="wix-blog-card"><img class="card-banner-img" src="images/post5.jpg" alt="Post 5"><div class="card-inner-box"><div class="author-meta-row"><a href="index.html" class="author-avatar-link"><img class="author-avatar" src="images/profile.jpg" alt="User"></a><div class="meta-details"><a href="index.html" class="author-name-link">mis8519</a><span>Jan 15, 2024</span></div></div><a href="#" class="blog-card-title">Academic Framework Realignment</a><p class="blog-card-preview">Structural changes updating modern testing systems across secondary course tracking layers...</p><div class="card-divider-line"></div><div class="card-stats-footer"><span>198 views</span><div><span>2 </span><span class="like-heart">♥</span></div></div></div></article>
+        <article class="wix-blog-card"><img class="card-banner-img" src="images/post6.jpg" alt="Post 6"><div class="card-inner-box"><div class="author-meta-row"><a href="index.html" class="author-avatar-link"><img class="author-avatar" src="images/profile.jpg" alt="User"></a><div class="meta-details"><a href="index.html" class="author-name-link">mis8519</a><span>Dec 20, 2023</span></div></div><a href="#" class="blog-card-title">Institutional Christmas Drive</a><p class="blog-card-preview">Community service program details launching across local barangay operations this weekend...</p><div class="card-divider-line"></div><div class="card-stats-footer"><span>411 views</span><div><span>8 </span><span class="like-heart">♥</span></div></div></div></article>
+        <article class="wix-blog-card"><img class="card-banner-img" src="images/post7.jpg" alt="Post 7"><div class="card-inner-box"><div class="author-meta-row"><a href="index.html" class="author-avatar-link"><img class="author-avatar" src="images/profile.jpg" alt="User"></a><div class="meta-details"><a href="index.html" class="author-name-link">mis8519</a><span>Nov 11, 2023</span></div></div><a href="#" class="blog-card-title">Athletic Tournament Schedules</a><p class="blog-card-preview">Varsity configurations announced for the seasonal state meets starting next month...</p><div class="card-divider-line"></div><div class="card-stats-footer"><span>289 views</span><div><span>0 </span><span class="like-heart">♥</span></div></div></div></article>
+        <article class="wix-blog-card"><img class="card-banner-img" src="images/post8.jpg" alt="Post 8"><div class="card-inner-box"><div class="author-meta-row"><a href="index.html" class="author-avatar-link"><img class="author-avatar" src="images/profile.jpg" alt="User"></a><div class="meta-details"><a href="index.html" class="author-name-link">mis8519</a><span>Oct 05, 2023</span></div></div><a href="#" class="blog-card-title">TVET Course Accreditations</a><p class="blog-card-preview">TESDA verification standards updated for industrial technical tracking channels...</p><div class="card-divider-line"></div><div class="card-stats-footer"><span>512 views</span><div><span>4 </span><span class="like-heart">♥</span></div></div></div></article>
+        <article class="wix-blog-card"><img class="card-banner-img" src="images/post9.jpg" alt="Post 9"><div class="card-inner-box"><div class="author-meta-row"><a href="index.html" class="author-avatar-link"><img class="author-avatar" src="images/profile.jpg" alt="User"></a><div class="meta-details"><a href="index.html" class="author-name-link">mis8519</a><span>Sep 18, 2023</span></div></div><a href="#" class="blog-card-title">Lasallian Youth Seminar</a><p class="blog-card-preview">Leadership leadership modules completed by senior student council delegates during regional summits...</p><div class="card-divider-line"></div><div class="card-stats-footer"><span>174 views</span><div><span>3 </span><span class="like-heart">♥</span></div></div></div></article>
+        <article class="wix-blog-card"><img class="card-banner-img" src="images/post10.jpg" alt="Post 10"><div class="card-inner-box"><div class="author-meta-row"><a href="index.html" class="author-avatar-link"><img class="author-avatar" src="images/profile.jpg" alt="User"></a><div class="meta-details"><a href="index.html" class="author-name-link">mis8519</a><span>Aug 30, 2023</span></div></div><a href="#" class="blog-card-title">Orientation Assemblies Set</a><p class="blog-card-preview">Opening protocols guidelines matching fresh collegiate classes distributed through departments...</p><div class="card-divider-line"></div><div class="card-stats-footer"><span>956 views</span><div><span>12 </span><span class="like-heart">♥</span></div></div></div></article>
+    </div>
+
+    <footer class="site-footer">
+        <p>© De La Salle John Bosco College. All Institutional Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
