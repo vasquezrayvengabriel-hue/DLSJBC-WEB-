@@ -1,0 +1,21 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const currentUrl = window.location.pathname;
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+        const linkPage = link.getAttribute("href");
+        if (currentUrl.includes(linkPage)) {
+            link.classList.add("active");
+        } else if ((currentUrl === "/" || currentUrl.endsWith("/")) && linkPage === "index.html") {
+            link.classList.add("active");
+        }
+    });
+
+    const searchIcon = document.querySelector(".search-icon");
+    if (searchIcon) {
+        searchIcon.addEventListener("click", () => {
+            alert("Search functionality is currently being integrated with the DLSJBC archives.");
+        });
+    }
+});
