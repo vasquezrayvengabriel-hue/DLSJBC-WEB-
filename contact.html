@@ -1,83 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | DLSJBC</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .split-contact-card { max-width: 1000px; margin: 0 auto; background-color: #ffffff; color: #333333; display: grid; grid-template-columns: 1fr 1fr; border-radius: 4px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
-        .form-left-panel { padding: 50px 40px; display: flex; flex-direction: column; justify-content: center; }
-        .form-left-panel h2 { font-family: 'Georgia', serif; font-size: 2.2rem; color: #3b6e64; letter-spacing: 1px; margin-bottom: 25px; text-transform: uppercase; }
-        .form-left-panel p.sub { font-size: 0.95rem; color: #666666; margin-bottom: 30px; line-height: 1.4; }
-        
-        .form-field-unit { margin-bottom: 18px; }
-        .form-field-unit label { display: block; font-size: 0.8rem; font-weight: bold; color: #3b6e64; margin-bottom: 5px; }
-        .form-field-unit input, .form-field-unit textarea { width: 100%; padding: 12px; border: none; background-color: #d1dfda; border-radius: 4px; font-size: 0.9rem; color: #333; box-sizing: border-box; }
-        .form-field-unit input::placeholder, .form-field-unit textarea::placeholder { color: #99aba4; }
-        
-        .btn-wix-send { background-color: #296959; color: #ffffff; border: none; padding: 10px 35px; font-size: 0.9rem; font-weight: bold; border-radius: 4px; cursor: pointer; }
-        .address-text-block { margin-top: 35px; font-size: 0.85rem; color: #555555; line-height: 1.8; }
-        .photo-right-panel img { width: 100%; height: 100%; object-fit: cover; display: block; }
-        
-        .map-section { max-width: 1000px; margin: 30px auto; height: 350px; border: 1px solid var(--border-gold-alpha); }
-        .map-section iframe { width: 100%; height: 100%; border: none; }
-        
-        .wix-style-footer { background-color: #246353; text-align: center; padding: 40px 20px; border-top: 2px solid var(--accent-gold); color: #ffffff; }
-        .footer-logo-circle { width: 55px; height: 55px; background-color: #ffffff; border-radius: 50%; margin: 0 auto 15px auto; display: flex; align-items: center; justify-content: center; color: #246353; font-weight: bold; }
-        .chat-widget-button { position: fixed; bottom: 20px; right: 20px; background-color: #ffffff; color: #246353; padding: 10px 20px; border-radius: 30px; font-weight: bold; font-size: 0.85rem; box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 8px; text-decoration: none; z-index: 2000; }
-        @media (max-width: 768px) { .split-contact-card { grid-template-columns: 1fr; } .photo-right-panel { height: 300px; } }
-    </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Us | De La Salle John Bosco College</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="brand-identity">
-                <div class="brand-crest">DLS</div>
-                <div class="brand-typography"><h1>De La Salle John Bosco College</h1><p>Bislig City, Philippines</p></div>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="admission.html" class="nav-link">Admission</a></li>
-                <li><a href="posts.html" class="nav-link">Posts</a></li>
-                <li><a href="contact.html" class="nav-link active">Contact Us</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <main class="container" style="padding-top: 60px; padding-bottom: 30px;">
-        <div class="split-contact-card">
-            <div class="form-left-panel">
-                <h2>Contact Us</h2>
-                <p class="sub">Send us a message<br>and we'll get back to you shortly.</p>
-                <form class="wix-style-form">
-                    <div class="form-field-unit"><label>Email *</label><input type="email" placeholder="e.g., email@example.com" required></div>
-                    <div class="form-field-unit"><label>Subject *</label><input type="text" placeholder="e.g., inquiry" required></div>
-                    <div class="form-field-unit"><label>Your message *</label><textarea placeholder="Enter text here" rows="4" required></textarea></div>
-                    <div style="text-align: left; margin-top: 25px;"><button type="submit" class="btn-wix-send">Send</button></div>
-                </form>
-                <div class="address-text-block">
-                    <p>De La Salle Drive, Mangagoy, Bislig City, Surigao del Sur, Philippines</p>
-                    <p style="margin: 8px 0;"><a href="mailto:info@dlsjbc.edu.ph" style="color: #555; text-decoration: none;">info@dlsjbc.edu.ph</a></p>
-                    <p>+63 86 223 2115</p>
-                </div>
-            </div>
-            <div class="photo-right-panel"><img src="images/contact-students.jpg" alt="DLSJBC Students Uniform Laptop"></div>
-        </div>
-        <section class="map-section">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.7224213791054!2d126.3533803153359!3d8.180415303310052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33021966aaaaaaab%3A0x6b772421589da595!2sDe%20La%20Salle%20John%20Bosco%20College!5e0!3m2!1sen!2sph!4v1690000000000!5m2!1sen!2sph" loading="lazy"></iframe>
-        </section>
-    </main>
+<!-- TOP PROFILE -->
 
-    <footer class="wix-style-footer">
-        <div class="footer-logo-circle"><span>DLS</span></div>
-        <h3 style="font-family: 'Georgia', serif; font-size: 1.3rem; margin-bottom: 8px;">De La Salle John Bosco College</h3>
-        <p style="font-size: 0.85rem; opacity: 0.9;">De La Salle Drive, Mangagoy, Bislig City, Surigao del Sur, Philippines</p>
-        <p style="font-size: 0.75rem; color: #b2d4cc; margin-top: 15px;">©2023 by De La Salle John Bosco College</p>
-    </footer>
+<header class="top-profile">
 
-    <a href="#" class="chat-widget-button"><span>💬</span> Let's Chat!</a>
-    <script src="script.js"></script>
+<img src="images/profile.jpg" alt="DLSJBC">
+
+<h1>De La Salle John Bosco College</h1>
+
+<p>Bislig City, Surigao del Sur, Philippines</p>
+
+</header>
+
+<!-- NAVIGATION -->
+
+<nav class="navbar">
+
+<div class="nav-container">
+
+<div class="logo">
+
+<img src="images/logo.png" alt="Logo">
+
+<span>DLSJBC</span>
+
+</div>
+
+<ul class="nav-menu">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="admission.html">Admission</a></li>
+
+<li><a href="posts.html">Posts</a></li>
+
+<li><a href="contact.html" class="active">Contact Us</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+<!-- QUICK MENU -->
+
+<div class="quick-menu">
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="admission.html">Admission</a>
+
+<a href="posts.html">Posts</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+<!-- PAGE HEADER -->
+
+<section class="container">
+
+<h2 class="section-title">
+
+Contact Us
+
+</h2>
+
+<p style="text-align:center;max-width:800px;margin:auto;">
+
+We are happy to answer your questions regarding admissions,
+academic programs, and other services.
+
+You may contact us through the information below or send us a message.
+
+</p>
+
+</section>
+
+<!-- CONTACT SECTION -->
+
+<section class="container">
+
+<div class="grid">
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>School Address</h3>
+
+<p>
+
+De La Salle Drive<br>
+
+Mangagoy<br>
+
+Bislig City<br>
+
+Surigao del Sur<br>
+
+Philippines
+
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Contact Information</h3>
+
+<p>
+
+☎ (+63) 86 826-2214
+
+</p>
+
+<p>
+
+📧 info@dlsjbc.edu.ph
+
+</p>
+
+<p>
+
+🌐 www.dlsjbc.edu.ph
+
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<div class="card-content">
+
+<h3>Office Hours</h3>
+
+<p>
+
+Monday - Friday
+
+</p>
+
+<p>
+
+8:00 AM - 5:00 PM
+
+</p>
+
+<p>
+
+Saturday
+
+</p>
+
+<p>
+
+8:00 AM - 12:00 NN
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT FORM -->
+
+<section class="container">
+
+<h2 class="section-title">
+
+Send Us a Message
+
+</h2>
+
+<div class="card">
+
+<div class="card-content">
+
+<form>
+
+<p>
+
+<label>Full Name</label>
+
+</p>
+
+<input type="text" placeholder="Enter your full name" style="width:100%;padding:14px;margin:10px 0;">
+
+<p>
+
+<label>Email Address</label>
+
+</p>
+
+<input type="email" placeholder="Enter your email" style="width:100%;padding:14px;margin:10px 0;">
+
+<p>
+
+<label>Subject</label>
+
+</p>
+
+<input type="text" placeholder="Subject" style="width:100%;padding:14px;margin:10px 0;">
+
+<p>
+
+<label>Message</label>
+
+</p>
+
+<textarea rows="6" placeholder="Write your message..." style="width:100%;padding:14px;margin:10px 0;"></textarea>
+
+<br><br>
+
+<button class="btn btn-primary">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GOOGLE MAP -->
+
+<section class="container">
+
+<h2 class="section-title">
+
+Find Us
+
+</h2>
+
+<div class="card">
+
+<iframe
+
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.7224213791054!2d126.3533803153359!3d8.180415303310052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33021966aaaaaaab%3A0x6b772421589da595!2sDe%20La%20Salle%20John%20Bosco%20College!5e0!3m2!1sen!2sph!4v1690000000000!5m2!1sen!2sph"
+
+width="100%"
+
+height="450"
+
+style="border:0;"
+
+loading="lazy">
+
+</iframe>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<img src="images/footer.jpg"
+
+class="footer-image"
+
+alt="Footer Image">
+
+<div class="footer-content">
+
+<h3>
+
+De La Salle John Bosco College
+
+</h3>
+
+<p>
+
+De La Salle Drive
+
+Mangagoy
+
+Bislig City
+
+Surigao del Sur
+
+Philippines
+
+</p>
+
+<p>
+
+Email:
+info@dlsjbc.edu.ph
+
+</p>
+
+<p>
+
+Telephone:
+(+63) 86 826-2214
+
+</p>
+
+</div>
+
+<div class="footer-bottom">
+
+© 2026 De La Salle John Bosco College
+
+All Rights Reserved.
+
+</div>
+
+</footer>
+
 </body>
+
 </html>
