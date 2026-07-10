@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>News & Posts | De La Salle John Bosco College</title>
+<title>News & Articles | De La Salle John Bosco College</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -14,7 +14,7 @@
 
 <body>
 
-<!--================ TOP PROFILE ================-->
+<!-- ================= TOP PROFILE ================= -->
 
 <header class="top-profile">
 
@@ -26,7 +26,7 @@
 
 </header>
 
-<!--================ NAVIGATION ================-->
+<!-- ================= NAVIGATION ================= -->
 
 <nav class="navbar">
 
@@ -58,7 +58,7 @@
 
 </nav>
 
-<!--================ QUICK MENU ================-->
+<!-- ================= QUICK MENU ================= -->
 
 <div class="quick-menu">
 
@@ -74,37 +74,142 @@
 
 </div>
 
-<!--================ PAGE HEADER ================-->
-
-<!-- ================= SEARCH ================= -->
+<!-- ================= PAGE HEADER ================= -->
 
 <section class="container">
 
 <h2 class="section-title">
 
-News & Articles
+Latest News & Articles
 
 </h2>
+
+<p style="text-align:center;max-width:900px;margin:auto;color:#ddd;">
+
+Read the latest official news, announcements,
+academic achievements, admissions, campus events,
+and institutional updates from
+<strong>De La Salle John Bosco College.</strong>
+
+</p>
+
+</section>
+
+<!-- ================= SEARCH BAR ================= -->
+
+<section class="container">
 
 <div class="search-news">
 
 <input
 type="text"
-placeholder="Search news, announcements, or events...">
+id="searchInput"
+placeholder="Search articles, admissions, events, announcements...">
 
+<button
+class="btn btn-primary"
+onclick="searchPosts()">
 
+Search
 
-<!-- ================= LATEST NEWS ================= -->
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= FEATURED ARTICLE ================= -->
+
+<section class="container">
+
+<div class="featured-news">
+
+<div class="featured-image">
+
+<img src="images/post1.jpg"
+alt="Featured News">
+
+</div>
+
+<div class="featured-content">
+
+<span class="category">
+
+FEATURED ARTICLE
+
+</span>
+
+<h2>
+
+Admission for School Year 2024–2025 Is Now Ongoing
+
+</h2>
+
+<div class="author">
+
+<img src="images/profile.jpg"
+alt="DLSJBC Administration">
+
+<div>
+
+<strong>DLSJBC Administration</strong>
+
+<br>
+
+<small>Official Website • Admissions</small>
+
+</div>
+
+</div>
+
+<p>
+
+Applications are now open for Preschool,
+Elementary,
+Junior High School,
+Senior High School,
+College,
+Graduate School,
+and TESDA programs.
+
+Visit the official DLSJBC website
+to view admission requirements,
+application procedures,
+and enrollment schedules.
+
+</p>
+
+<a
+href="https://www.dlsjbc.edu.ph/post/77e8c824"
+target="_blank"
+class="btn btn-primary">
+
+Read Original Article
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= LATEST ARTICLES ================= -->
+
+<section class="container">
+
+<h2 class="section-title">
 
 Latest Articles
 
 </h2>
 
-<div class="news-grid">
+<div class="news-grid" id="newsContainer">
 
-<!-- ================= ARTICLE 1 ================= -->
+<!-- ARTICLE 1 STARTS BELOW -->
+    <!-- ================= ARTICLE 1 ================= -->
 
-<div class="card">
+<div class="card post-card">
 
 <img src="images/post1.jpg" alt="Admission">
 
@@ -112,19 +217,19 @@ Latest Articles
 
 <span class="category">Admissions</span>
 
-<h3>Admission for SY 2024–2025 Is Now Ongoing</h3>
+<h3>
+Admission for School Year 2024–2025 Is Now Ongoing
+</h3>
 
 <div class="author">
 
-<img src="images/profile.jpg" alt="Admin">
+<img src="images/profile.jpg" alt="Author">
 
 <div>
 
-<strong>DLSJBC Administration</strong>
+<strong>DLSJBC Administration</strong><br>
 
-<br>
-
-<small>Published • June 2024</small>
+<small>Official Announcement</small>
 
 </div>
 
@@ -132,27 +237,19 @@ Latest Articles
 
 <p>
 
-Applications for all academic levels are now open.
-Learn more about admission requirements,
-entrance procedures, and enrollment schedules.
+Applications are now open for all academic
+levels. Learn more about admission requirements,
+application procedures, and enrollment schedules.
 
 </p>
 
-<div class="button-group">
-
-<a href="post1.html" class="btn btn-primary">
-
-Read More
-
-</a>
-
-<a href="https://www.dlsjbc.edu.ph/" target="_blank" class="btn btn-secondary">
+<a href="https://www.dlsjbc.edu.ph/post/77e8c824"
+target="_blank"
+class="btn btn-primary">
 
 Read Original Article
 
 </a>
-
-</div>
 
 </div>
 
@@ -160,7 +257,7 @@ Read Original Article
 
 <!-- ================= ARTICLE 2 ================= -->
 
-<div class="card">
+<div class="card post-card">
 
 <img src="images/post2.jpg" alt="Alumni">
 
@@ -168,19 +265,19 @@ Read Original Article
 
 <span class="category">Campus Events</span>
 
-<h3>Alumni Homecoming 2024</h3>
+<h3>
+Alumni Homecoming
+</h3>
 
 <div class="author">
 
-<img src="images/profile.jpg" alt="Admin">
+<img src="images/profile.jpg" alt="Author">
 
 <div>
 
-<strong>DLSJBC Administration</strong>
+<strong>DLSJBC Administration</strong><br>
 
-<br>
-
-<small>Published • 2024</small>
+<small>Campus Event</small>
 
 </div>
 
@@ -188,27 +285,19 @@ Read Original Article
 
 <p>
 
-Reconnect with fellow Lasallians,
-celebrate achievements,
-and participate in exciting alumni activities.
+Reconnect with fellow Lasallians and celebrate
+years of friendship through the annual alumni
+homecoming celebration.
 
 </p>
 
-<div class="button-group">
-
-<a href="post2.html" class="btn btn-primary">
-
-Read More
-
-</a>
-
-<a href="https://www.dlsjbc.edu.ph/" target="_blank" class="btn btn-secondary">
+<a href="https://www.dlsjbc.edu.ph/articles"
+target="_blank"
+class="btn btn-primary">
 
 Read Original Article
 
 </a>
-
-</div>
 
 </div>
 
@@ -216,7 +305,7 @@ Read Original Article
 
 <!-- ================= ARTICLE 3 ================= -->
 
-<div class="card">
+<div class="card post-card">
 
 <img src="images/post3.jpg" alt="Enrollment">
 
@@ -224,19 +313,19 @@ Read Original Article
 
 <span class="category">Enrollment</span>
 
-<h3>Ready to Write the Next Chapter of Your Academic Journey?</h3>
+<h3>
+Ready to Write the Next Chapter of Your Academic Journey?
+</h3>
 
 <div class="author">
 
-<img src="images/profile.jpg" alt="Admin">
+<img src="images/profile.jpg" alt="Author">
 
 <div>
 
-<strong>DLSJBC Administration</strong>
+<strong>DLSJBC Administration</strong><br>
 
-<br>
-
-<small>Published • 2024</small>
+<small>Enrollment Update</small>
 
 </div>
 
@@ -244,27 +333,18 @@ Read Original Article
 
 <p>
 
-Begin your Lasallian journey through
-the official pre-registration process
-for incoming students.
+Begin your Lasallian journey through the official
+pre-registration process for incoming students.
 
 </p>
 
-<div class="button-group">
-
-<a href="post3.html" class="btn btn-primary">
-
-Read More
-
-</a>
-
-<a href="https://www.dlsjbc.edu.ph/" target="_blank" class="btn btn-secondary">
+<a href="https://www.dlsjbc.edu.ph/post/7efae68e"
+target="_blank"
+class="btn btn-primary">
 
 Read Original Article
 
 </a>
-
-</div>
 
 </div>
 
@@ -272,27 +352,27 @@ Read Original Article
 
 <!-- ================= ARTICLE 4 ================= -->
 
-<div class="card">
+<div class="card post-card">
 
-<img src="images/post4.jpg" alt="Science">
+<img src="images/post4.jpg" alt="Science Department">
 
 <div class="card-content">
 
 <span class="category">Academic News</span>
 
-<h3>Science Teachers Participate in Benchmarking Activity</h3>
+<h3>
+Science Teachers Participate in Benchmarking Activity
+</h3>
 
 <div class="author">
 
-<img src="images/profile.jpg" alt="Admin">
+<img src="images/profile.jpg" alt="Author">
 
 <div>
 
-<strong>DLSJBC Administration</strong>
+<strong>DLSJBC Administration</strong><br>
 
-<br>
-
-<small>Published • 2024</small>
+<small>Academic News</small>
 
 </div>
 
@@ -300,22 +380,15 @@ Read Original Article
 
 <p>
 
-Faculty members participated in
-professional benchmarking activities
-to strengthen science education
-and academic excellence.
+Faculty members participated in benchmarking
+activities to further strengthen science education
+and instructional excellence.
 
 </p>
 
-<div class="button-group">
-
-<a href="post4.html" class="btn btn-primary">
-
-Read More
-
-</a>
-
-<a href="https://www.dlsjbc.edu.ph/" target="_blank" class="btn btn-secondary">
+<a href="https://www.dlsjbc.edu.ph/articles"
+target="_blank"
+class="btn btn-primary">
 
 Read Original Article
 
@@ -325,29 +398,27 @@ Read Original Article
 
 </div>
 
-</div>
-
 <!-- ================= ARTICLE 5 ================= -->
 
-<div class="card">
+<div class="card post-card">
 
-<img src="images/post5.jpg" alt="Campus">
+<img src="images/post5.jpg" alt="Quality Education">
 
 <div class="card-content">
 
-<span class="category">Campus News</span>
+<span class="category">Institutional News</span>
 
-<h3>Experience Quality Lasallian Education</h3>
+<h3>
+Experience Quality Lasallian Education
+</h3>
 
 <div class="author">
 
-<img src="images/profile.jpg" alt="Admin">
+<img src="images/profile.jpg" alt="Author">
 
 <div>
 
-<strong>DLSJBC Administration</strong>
-
-<br>
+<strong>DLSJBC Administration</strong><br>
 
 <small>Official News</small>
 
@@ -358,21 +429,14 @@ Read Original Article
 <p>
 
 Discover how De La Salle John Bosco College
-continues to provide holistic,
-quality Catholic and Lasallian education
-to every learner.
+continues to provide holistic Catholic and
+Lasallian education for every learner.
 
 </p>
 
-<div class="button-group">
-
-<a href="post5.html" class="btn btn-primary">
-
-Read More
-
-</a>
-
-<a href="https://www.dlsjbc.edu.ph/" target="_blank" class="btn btn-secondary">
+<a href="https://www.dlsjbc.edu.ph/"
+target="_blank"
+class="btn btn-primary">
 
 Read Original Article
 
@@ -381,23 +445,21 @@ Read Original Article
 </div>
 
 </div>
+<!-- ================= ARTICLE 6 ================= -->
 
-</div>
-    <!-- ================= ARTICLE 6 ================= -->
+<div class="card post-card">
 
-<div class="card">
-
-<img src="images/post6.jpg" alt="Student Activities">
+<img src="images/post6.jpg" alt="Senior High School Plus">
 
 <div class="card-content">
 
-<span class="category">Student Life</span>
+<span class="category">Senior High School</span>
 
-<h3>Student Leadership and Campus Activities</h3>
+<h3>Senior High School Plus Program</h3>
 
 <div class="author">
 
-<img src="images/profile.jpg" alt="Admin">
+<img src="images/profile.jpg" alt="Author">
 
 <div>
 
@@ -411,27 +473,19 @@ Read Original Article
 
 <p>
 
-Discover the latest student leadership programs,
-campus organizations, and activities that strengthen
-Lasallian leadership and service.
+Learn about the Senior High School Plus program,
+which prepares students for higher education,
+employment, and future careers.
 
 </p>
 
-<div class="button-group">
-
-<a href="post6.html" class="btn btn-primary">
-
-Read More
-
-</a>
-
-<a href="https://www.dlsjbc.edu.ph/" target="_blank" class="btn btn-secondary">
+<a href="https://www.dlsjbc.edu.ph/post/senior-high-school-plus"
+target="_blank"
+class="btn btn-primary">
 
 Read Original Article
 
 </a>
-
-</div>
 
 </div>
 
@@ -439,19 +493,19 @@ Read Original Article
 
 <!-- ================= ARTICLE 7 ================= -->
 
-<div class="card">
+<div class="card post-card">
 
-<img src="images/post7.jpg" alt="Academic">
+<img src="images/post7.jpg" alt="Tokyo Educational Immersion">
 
 <div class="card-content">
 
-<span class="category">Academic Excellence</span>
+<span class="category">International Programs</span>
 
-<h3>Academic Excellence and Student Achievement</h3>
+<h3>Tokyo Educational Immersion</h3>
 
 <div class="author">
 
-<img src="images/profile.jpg" alt="Admin">
+<img src="images/profile.jpg" alt="Author">
 
 <div>
 
@@ -465,27 +519,19 @@ Read Original Article
 
 <p>
 
-Recognizing outstanding achievements of students,
-faculty, and academic programs that continue to
-bring pride to the institution.
+Students experienced international learning,
+cultural exchange, and academic collaboration
+through the Tokyo Educational Immersion Program.
 
 </p>
 
-<div class="button-group">
-
-<a href="post7.html" class="btn btn-primary">
-
-Read More
-
-</a>
-
-<a href="https://www.dlsjbc.edu.ph/" target="_blank" class="btn btn-secondary">
+<a href="https://www.dlsjbc.edu.ph/post/7ee58bd8"
+target="_blank"
+class="btn btn-primary">
 
 Read Original Article
 
 </a>
-
-</div>
 
 </div>
 
@@ -493,25 +539,25 @@ Read Original Article
 
 <!-- ================= ARTICLE 8 ================= -->
 
-<div class="card">
+<div class="card post-card">
 
-<img src="images/post8.jpg" alt="Community">
+<img src="images/post8.jpg" alt="LET Passers">
 
 <div class="card-content">
 
-<span class="category">Community Extension</span>
+<span class="category">Achievements</span>
 
-<h3>Community Outreach and Extension Programs</h3>
+<h3>September 2023 LET Passers</h3>
 
 <div class="author">
 
-<img src="images/profile.jpg" alt="Admin">
+<img src="images/profile.jpg" alt="Author">
 
 <div>
 
 <strong>DLSJBC Administration</strong><br>
 
-<small>Official News</small>
+<small>Official Announcement</small>
 
 </div>
 
@@ -519,27 +565,19 @@ Read Original Article
 
 <p>
 
-Read about outreach initiatives, community
-partnerships, and Lasallian service programs
-benefiting society.
+Congratulations to the successful LET passers.
+DLSJBC celebrates another milestone in teacher
+education excellence.
 
 </p>
 
-<div class="button-group">
-
-<a href="post8.html" class="btn btn-primary">
-
-Read More
-
-</a>
-
-<a href="https://www.dlsjbc.edu.ph/" target="_blank" class="btn btn-secondary">
+<a href="https://www.dlsjbc.edu.ph/post/september-2023-licensure-examination-for-teachers-let"
+target="_blank"
+class="btn btn-primary">
 
 Read Original Article
 
 </a>
-
-</div>
 
 </div>
 
@@ -547,25 +585,25 @@ Read Original Article
 
 <!-- ================= ARTICLE 9 ================= -->
 
-<div class="card">
+<div class="card post-card">
 
-<img src="images/post9.jpg" alt="Research">
+<img src="images/post9.jpg" alt="Admissions">
 
 <div class="card-content">
 
-<span class="category">Research</span>
+<span class="category">Admissions</span>
 
-<h3>Innovation, Research and Development</h3>
+<h3>Admissions and Enrollment Updates</h3>
 
 <div class="author">
 
-<img src="images/profile.jpg" alt="Admin">
+<img src="images/profile.jpg" alt="Author">
 
 <div>
 
 <strong>DLSJBC Administration</strong><br>
 
-<small>Official News</small>
+<small>Official Admissions</small>
 
 </div>
 
@@ -573,27 +611,19 @@ Read Original Article
 
 <p>
 
-Explore research initiatives, innovation,
-collaborative projects, and academic development
-within the institution.
+Stay updated with admission schedules,
+requirements, and enrollment announcements
+for all academic levels.
 
 </p>
 
-<div class="button-group">
-
-<a href="post9.html" class="btn btn-primary">
-
-Read More
-
-</a>
-
-<a href="https://www.dlsjbc.edu.ph/" target="_blank" class="btn btn-secondary">
+<a href="https://www.dlsjbc.edu.ph/articles/categories/admission"
+target="_blank"
+class="btn btn-primary">
 
 Read Original Article
 
 </a>
-
-</div>
 
 </div>
 
@@ -601,25 +631,25 @@ Read Original Article
 
 <!-- ================= ARTICLE 10 ================= -->
 
-<div class="card">
+<div class="card post-card">
 
-<img src="images/post10.jpg" alt="Announcements">
+<img src="images/post10.jpg" alt="Latest News">
 
 <div class="card-content">
 
-<span class="category">Announcements</span>
+<span class="category">Latest News</span>
 
-<h3>Latest Announcements and Institutional Updates</h3>
+<h3>More Official News and Announcements</h3>
 
 <div class="author">
 
-<img src="images/profile.jpg" alt="Admin">
+<img src="images/profile.jpg" alt="Author">
 
 <div>
 
 <strong>DLSJBC Administration</strong><br>
 
-<small>Latest Update</small>
+<small>Official Website</small>
 
 </div>
 
@@ -627,27 +657,19 @@ Read Original Article
 
 <p>
 
-Stay informed with important announcements,
-institutional updates, academic schedules,
-and official notices from DLSJBC.
+Visit the official DLSJBC News page to read
+the latest announcements, campus activities,
+and institutional updates.
 
 </p>
 
-<div class="button-group">
-
-<a href="post10.html" class="btn btn-primary">
-
-Read More
-
-</a>
-
-<a href="https://www.dlsjbc.edu.ph/" target="_blank" class="btn btn-secondary">
+<a href="https://www.dlsjbc.edu.ph/articles"
+target="_blank"
+class="btn btn-primary">
 
 Read Original Article
 
 </a>
-
-</div>
 
 </div>
 
@@ -657,39 +679,92 @@ Read Original Article
 
 </section>
 
+<!-- ================= SEARCH FUNCTION ================= -->
+
+<script>
+
+function searchPosts(){
+
+const input=document.getElementById("searchInput").value.toLowerCase();
+
+const posts=document.querySelectorAll(".post-card");
+
+posts.forEach(function(post){
+
+const text=post.innerText.toLowerCase();
+
+if(text.includes(input)){
+
+post.style.display="block";
+
+}else{
+
+post.style.display="none";
+
+}
+
+});
+
+}
+
+document.getElementById("searchInput").addEventListener("keyup",searchPosts);
+
+</script>
 
 <!-- ================= FOOTER ================= -->
-</div>
+
 <footer>
 
 <div class="footer-profile">
-    <img src="images/footer.jpg" alt="De La Salle John Bosco College">
+
+<img src="images/footer.jpg"
+alt="De La Salle John Bosco College">
+
 </div>
 
 <div class="footer-content">
 
-<h3>De La Salle John Bosco College</h3>
+<h3>
+De La Salle John Bosco College
+</h3>
 
 <p>
+
 De La Salle Drive<br>
+
 Mangagoy, Bislig City<br>
+
 Surigao del Sur, Philippines
+
 </p>
 
 <p>
+
 <strong>Email:</strong><br>
+
 info@dlsjbc.edu.ph
+
 </p>
 
 <p>
+
 <strong>Telephone:</strong><br>
+
 (+63) 86 826-2214
+
 </p>
 
 </div>
 
 <div class="footer-bottom">
-© 2026 De La Salle John Bosco College. All Rights Reserved.
+
+© 2026 De La Salle John Bosco College.
+All Rights Reserved.
+
 </div>
 
 </footer>
+
+</body>
+
+    </html>
