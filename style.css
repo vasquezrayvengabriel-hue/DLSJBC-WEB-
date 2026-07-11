@@ -419,7 +419,14 @@ CARDS
     }
 
 }
-
+.no-results{
+    display:none;
+    text-align:center;
+    margin:40px 0;
+    font-size:22px;
+    font-weight:bold;
+    color:var(--gold);
+}
 /*=====================
 SECTION TITLE
 ======================*/
