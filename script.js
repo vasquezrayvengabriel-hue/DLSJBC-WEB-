@@ -62,3 +62,40 @@ cards.forEach(card=>{
     observer.observe(card);
 
 });
+
+// =========================
+// Posts Search
+// =========================
+
+const searchInput = document.getElementById("searchInput");
+
+if (searchInput) {
+
+    const posts = document.querySelectorAll(".post-card");
+    const noResults = document.getElementById("noResults");
+
+    searchInput.addEventListener("keyup", function () {
+
+        const keyword = this.value.toLowerCase().trim();
+        let found = 0;
+
+        posts.forEach(function(post){
+
+            const text = post.textContent.toLowerCase();
+
+            if(text.includes(keyword)){
+                post.style.display = "";
+                found++;
+            }else{
+                post.style.display = "none";
+            }
+
+        });
+
+        if(noResults){
+            noResults.style.display = found === 0 ? "block" : "none";
+        }
+
+    });
+
+}
