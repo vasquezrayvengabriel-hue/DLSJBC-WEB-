@@ -67,9 +67,11 @@ cards.forEach(card=>{
 // SEARCH POSTS
 // =========================
 
-const searchInput = document.getElementById("searchInput");
+document.addEventListener("DOMContentLoaded", function () {
 
-if (searchInput) {
+    const searchInput = document.getElementById("searchInput");
+
+    if (!searchInput) return;
 
     const posts = document.querySelectorAll(".post-card");
     const noResults = document.getElementById("noResults");
@@ -77,35 +79,25 @@ if (searchInput) {
     searchInput.addEventListener("input", function () {
 
         const keyword = this.value.toLowerCase().trim();
-        let visiblePosts = 0;
+        let found = 0;
 
-        posts.forEach(post => {
+        posts.forEach(function(post) {
 
             const searchable =
-                (post.dataset.search || "").toLowerCase() +
-                " " +
-                post.textContent.toLowerCase();
+                post.textContent.toLowerCase() + " " +
+                (post.dataset.search || "").toLowerCase();
 
             if (searchable.includes(keyword)) {
-
                 post.style.display = "";
-                visiblePosts++;
-
+                found++;
             } else {
-
                 post.style.display = "none";
-
             }
 
         });
 
-        if (noResults) {
-
-            noResults.style.display =
-                visiblePosts === 0 ? "block" : "none";
-
-        }
+        noResults.style.display = found === 0 ? "block" : "none";
 
     });
 
-                                 }
+});
