@@ -63,39 +63,43 @@ cards.forEach(card=>{
 
 });
 
-// =========================
-// Posts Search
-// =========================
+<!-- ================= SEARCH FUNCTION ================= -->
+
+<script>
 
 const searchInput = document.getElementById("searchInput");
+const posts = document.querySelectorAll(".post-card");
+const noResults = document.getElementById("noResults");
 
-if (searchInput) {
+searchInput.addEventListener("input", function () {
 
-    const posts = document.querySelectorAll(".post-card");
-    const noResults = document.getElementById("noResults");
+    const keyword = this.value.toLowerCase().trim();
+    let visiblePosts = 0;
 
-    searchInput.addEventListener("keyup", function () {
+    posts.forEach(function(post){
 
-        const keyword = this.value.toLowerCase().trim();
-        let found = 0;
+        const text = post.textContent.toLowerCase();
 
-        posts.forEach(function(post){
+        if(text.includes(keyword)){
 
-            const text = post.textContent.toLowerCase();
+            post.style.display = "";
+            visiblePosts++;
 
-            if(text.includes(keyword)){
-                post.style.display = "";
-                found++;
-            }else{
-                post.style.display = "none";
-            }
+        }else{
 
-        });
+            post.style.display = "none";
 
-        if(noResults){
-            noResults.style.display = found === 0 ? "block" : "none";
         }
 
     });
 
-}
+    if(noResults){
+
+        noResults.style.display =
+            visiblePosts === 0 ? "block" : "none";
+
+    }
+
+});
+
+</script>
