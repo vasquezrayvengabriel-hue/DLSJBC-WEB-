@@ -231,40 +231,59 @@ CARDS
     color:#ddd;
     line-height:1.8;
 }
-/*=========================================
-POSTS PAGE
-=========================================*/
+
+/* ==================================================
+   POSTS PAGE (UPDATED)
+================================================== */
+
+/* Search Bar */
 
 .search-news{
     display:flex;
+    justify-content:center;
+    align-items:center;
     gap:15px;
+    margin:40px auto;
     max-width:900px;
-    margin:30px auto 50px;
 }
 
 .search-news input{
     flex:1;
-    padding:15px;
-    border-radius:8px;
-    border:none;
+    padding:15px 20px;
     font-size:16px;
+    border:2px solid var(--gold);
+    border-radius:8px;
+    background:#fff;
+    color:#222;
+    outline:none;
+    transition:.3s;
 }
+
+.search-news input:focus{
+    border-color:var(--green);
+    box-shadow:0 0 10px rgba(212,175,55,.4);
+}
+
+.search-news button{
+    min-width:150px;
+}
+
+/* Featured News */
 
 .featured-news{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1.2fr 1fr;
     gap:35px;
-    margin-bottom:60px;
-    background:rgba(15,15,15,.90);
+    background:rgba(15,15,15,.92);
     border-radius:12px;
     overflow:hidden;
-    border:2px solid var(--gold);
+    border-top:5px solid var(--gold);
+    margin-bottom:60px;
 }
 
 .featured-image img{
     width:100%;
     height:100%;
-    min-height:400px;
     object-fit:cover;
 }
 
@@ -274,42 +293,133 @@ POSTS PAGE
 
 .featured-content h2{
     color:var(--gold);
+    font-size:2rem;
     margin:15px 0;
 }
 
-.category{
-    display:inline-block;
-    background:var(--green);
-    color:white;
-    padding:8px 16px;
-    border-radius:30px;
-    font-size:14px;
+.featured-content p{
+    color:#ddd;
+    line-height:1.8;
 }
 
-.author{
-    display:flex;
-    align-items:center;
-    gap:15px;
-    margin:20px 0;
-}
-
-.author img{
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    object-fit:cover;
-    border:3px solid var(--gold);
-}
+/* News Grid */
 
 .news-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
-    gap:30px;
+    gap:35px;
 }
 
-.news-grid .card:hover{
-    transform:translateY(-10px);
+/* News Card */
+
+.post-card{
+    background:rgba(15,15,15,.90);
+    border-radius:12px;
+    overflow:hidden;
+    border-top:4px solid var(--gold);
+    transition:.35s;
 }
+
+.post-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.4);
+}
+
+.post-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.post-card .card-content{
+    padding:25px;
+}
+
+.post-card h3{
+    color:var(--gold);
+    margin:15px 0;
+    line-height:1.4;
+}
+
+.post-card p{
+    color:#ddd;
+    line-height:1.8;
+}
+
+/* Category Badge */
+
+.category{
+    display:inline-block;
+    background:var(--gold);
+    color:#000;
+    font-size:13px;
+    font-weight:bold;
+    padding:6px 15px;
+    border-radius:30px;
+    margin-bottom:15px;
+}
+
+/* Author */
+
+.author{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin:20px 0;
+}
+
+.author img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    border:2px solid var(--gold);
+    object-fit:cover;
+}
+
+.author strong{
+    color:#fff;
+}
+
+.author small{
+    color:#ccc;
+}
+
+/* Button */
+
+.post-card .btn,
+.featured-content .btn{
+    width:100%;
+    text-align:center;
+    margin-top:20px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .featured-news{
+        grid-template-columns:1fr;
+    }
+
+    .featured-content{
+        padding:25px;
+    }
+
+    .search-news{
+        flex-direction:column;
+    }
+
+    .search-news input,
+    .search-news button{
+        width:100%;
+    }
+
+    .news-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
 /*=====================
 SECTION TITLE
 ======================*/
