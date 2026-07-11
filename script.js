@@ -63,43 +63,49 @@ cards.forEach(card=>{
 
 });
 
-<!-- ================= SEARCH FUNCTION ================= -->
-
-<script>
+// =========================
+// SEARCH POSTS
+// =========================
 
 const searchInput = document.getElementById("searchInput");
-const posts = document.querySelectorAll(".post-card");
-const noResults = document.getElementById("noResults");
 
-searchInput.addEventListener("input", function () {
+if (searchInput) {
 
-    const keyword = this.value.toLowerCase().trim();
-    let visiblePosts = 0;
+    const posts = document.querySelectorAll(".post-card");
+    const noResults = document.getElementById("noResults");
 
-    posts.forEach(function(post){
+    searchInput.addEventListener("input", function () {
 
-        const text = post.textContent.toLowerCase();
+        const keyword = this.value.toLowerCase().trim();
+        let visiblePosts = 0;
 
-        if(text.includes(keyword)){
+        posts.forEach(post => {
 
-            post.style.display = "";
-            visiblePosts++;
+            const searchable =
+                (post.dataset.search || "").toLowerCase() +
+                " " +
+                post.textContent.toLowerCase();
 
-        }else{
+            if (searchable.includes(keyword)) {
 
-            post.style.display = "none";
+                post.style.display = "";
+                visiblePosts++;
+
+            } else {
+
+                post.style.display = "none";
+
+            }
+
+        });
+
+        if (noResults) {
+
+            noResults.style.display =
+                visiblePosts === 0 ? "block" : "none";
 
         }
 
     });
 
-    if(noResults){
-
-        noResults.style.display =
-            visiblePosts === 0 ? "block" : "none";
-
-    }
-
-});
-
-</script>
+                                 }
