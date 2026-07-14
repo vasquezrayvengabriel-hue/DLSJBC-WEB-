@@ -438,43 +438,26 @@ SECTION TITLE
     margin-bottom:40px;
     font-family:Georgia,serif;
 }
-
 /*=====================
 VISION & MISSION
 ======================*/
 
-.vision-mission{
-    display:flex;
-    flex-direction:column;
-    gap:30px;
-}
-
 .vision-mission .card{
-    background:#000;
-    border:2px solid var(--gold);
-    border-radius:12px;
-    box-shadow:0 10px 25px rgba(0,0,0,.5);
+    background:#000 !important;
+    border:2px solid var(--gold) !important;
+    border-top:none !important;
 }
 
 .vision-mission .card-content{
-    padding:35px;
+    background:#000 !important;
 }
 
 .vision-mission h3{
-    color:var(--gold);
-    font-size:2rem;
-    text-align:center;
-    margin-bottom:20px;
-    font-family:Georgia, serif;
-    border-bottom:2px solid var(--gold);
-    padding-bottom:10px;
+    color:var(--gold) !important;
 }
 
 .vision-mission p{
-    color:#ffffff;
-    font-size:1.08rem;
-    line-height:1.9;
-    text-align:justify;
+    color:#fff !important;
 }
 
 /* ================= FOOTER PROFILE ================= */
