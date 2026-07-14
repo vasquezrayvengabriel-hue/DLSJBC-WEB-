@@ -439,6 +439,41 @@ SECTION TITLE
     font-family:Georgia,serif;
 }
 
+/* ================= VISION & MISSION ================= */
+
+.vision-mission{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.vision-mission .card{
+    background:#fff;
+    border-left:6px solid #d4af37;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+.vision-mission .card-content{
+    padding:30px;
+}
+
+.vision-mission h3{
+    color:#0b5d3f;
+    margin-bottom:15px;
+    font-size:1.6rem;
+    border-bottom:2px solid #d4af37;
+    display:inline-block;
+    padding-bottom:6px;
+}
+
+.vision-mission p{
+    line-height:1.8;
+    text-align:justify;
+    color:#333;
+    font-size:1.05rem;
+}
+
 /* ================= FOOTER PROFILE ================= */
 
 .footer-profile{
