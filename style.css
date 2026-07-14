@@ -442,24 +442,15 @@ SECTION TITLE
 VISION & MISSION
 ======================*/
 
-.vision-mission .card{
-    background:#000 !important;
-    border:2px solid var(--gold) !important;
-    border-top:none !important;
+.card{
+    background:rgba(30,30,30,.82);
+    border-radius:12px;
+    overflow:hidden;
+    border-top:4px solid var(--gold);
+    border:1px solid rgba(212,175,55,.35);
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+    transition:.35s;
 }
-
-.vision-mission .card-content{
-    background:#000 !important;
-}
-
-.vision-mission h3{
-    color:var(--gold) !important;
-}
-
-.vision-mission p{
-    color:#fff !important;
-}
-
 /* ================= FOOTER PROFILE ================= */
 
 .footer-profile{
