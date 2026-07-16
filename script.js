@@ -101,3 +101,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+const toggle = document.getElementById("themeToggle");
+const icon = toggle.querySelector("i");
+
+// Load saved mode
+if(localStorage.getItem("theme") === "light"){
+    document.body.classList.add("light-mode");
+    icon.classList.remove("fa-moon");
+    icon.classList.add("fa-sun");
+}
+
+toggle.addEventListener("click", function(){
+
+    document.body.classList.toggle("light-mode");
+
+    if(document.body.classList.contains("light-mode")){
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+        localStorage.setItem("theme","light");
+    }else{
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+        localStorage.setItem("theme","dark");
+    }
+
+});
