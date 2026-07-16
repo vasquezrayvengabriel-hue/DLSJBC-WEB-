@@ -570,119 +570,36 @@ font-size:2.2rem;
     }
 }
 
-/* ======================================
-   DARK / LIGHT MODE
-====================================== */
-
-/* Smooth Transition */
-
-body,
-.navbar,
-.card,
-.post-card,
-.featured-news,
-.top-profile,
-.footer-content,
-.quick-menu a,
-.btn{
-    transition:.4s ease;
 }
 
-/* Toggle Button */
+/* ==========================
+   DARK/LIGHT MODE NAV BUTTON
+========================== */
 
-.theme-toggle{
-    position:fixed;
-    bottom:25px;
-    right:25px;
-    width:60px;
-    height:60px;
+.theme-nav-btn{
+    background:transparent;
     border:none;
-    border-radius:50%;
-    background:#d4af37;
-    color:#222;
-    font-size:24px;
+    color:#fff;
+    font-size:20px;
     cursor:pointer;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    box-shadow:0 10px 25px rgba(0,0,0,.35);
-    z-index:99999;
+    padding:8px 12px;
+    border-radius:6px;
     transition:.3s;
 }
 
-.theme-toggle:hover{
-    transform:scale(1.1);
+.theme-nav-btn:hover{
+    color:var(--gold);
+    background:rgba(255,255,255,.08);
 }
 
-/* ===================
-   LIGHT MODE
-=================== */
+/* Light Mode Button */
 
-body.light-mode{
-    background:#f4f4f4;
+body.light-mode .theme-nav-btn{
     color:#222;
 }
 
-body.light-mode::before{
-    background:rgba(255,255,255,.88);
-}
-
-body.light-mode .navbar{
-    background:#ffffff;
-    border-bottom:3px solid var(--gold);
-}
-
-body.light-mode .top-profile{
-    background:#ffffff;
-}
-
-body.light-mode .card,
-body.light-mode .post-card,
-body.light-mode .featured-news{
-    background:#ffffff;
-    color:#222;
-}
-
-body.light-mode .card-content p,
-body.light-mode .post-card p,
-body.light-mode .featured-content p,
-body.light-mode .footer-content p{
-    color:#444;
-}
-
-body.light-mode .nav-menu li a,
-body.light-mode .logo span{
-    color:#222;
-}
-
-body.light-mode h1,
-body.light-mode h2,
-body.light-mode h3{
+body.light-mode .theme-nav-btn:hover{
     color:var(--green-dark);
+    background:#f0f0f0;
 }
 
-body.light-mode .quick-menu a{
-    background:#ffffff;
-    color:var(--green-dark);
-    border:1px solid var(--gold);
-}
-
-body.light-mode .quick-menu a:hover{
-    background:var(--gold);
-    color:#222;
-}
-
-body.light-mode .btn-primary{
-    background:var(--gold);
-    color:#222;
-}
-
-body.light-mode .btn-secondary{
-    border:2px solid var(--green-dark);
-    color:var(--green-dark);
-}
-
-body.light-mode footer{
-    background:#ffffff;
-    color:#222;
-}
